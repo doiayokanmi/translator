@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   border: 0;
+  outline: 0;
+  font-family: 'Chivo Mono', monospace;
 }
 
 :root {
@@ -54,4 +58,36 @@ nav #navLink a:hover {
 
 nav i {
   margin-right: 5px;
+}
+
+main {
+  width: 90vw;
+  height: 70vh;
+  display: flex; 
+  justify-content: space-between;
+}
+
+aside {
+  flex-basis: 46%;
+  border: 1px solid var(--primaryColor);
+  border-radius: 10px;
+}
+
+#asideHead {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--primaryColor);
+  padding: 1em;
+  align-items: center;
+}
+
+#asideHead i {
+  cursor: pointer;
+}
+
+textarea {
+  padding: 1em;
+  width: 98%;
+  height: 55vh;
+  overflow: auto;
 }
